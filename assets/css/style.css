@@ -141,4 +141,7 @@ button:hover {
     button{
         margin: 5rem 0;
     }
+    .programacao{
+        margin-top: -1rem;
+    }
 }
