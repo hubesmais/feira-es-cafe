@@ -134,9 +134,6 @@ button:hover {
 
 /*Media Queries*/
 @media (max-width: 991px) {
-    .cafe{
-        padding: 0 !important;
-    }
     .cafe img{
         width: 100%;
         object-fit: cover;
