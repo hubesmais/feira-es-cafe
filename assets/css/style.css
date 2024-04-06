@@ -131,3 +131,14 @@ button:hover {
     background-color: #F0E3DB;
     color: #CA4024;
 }
+
+/*Media Queries*/
+@media (max-width: 991px) {
+    .cafe{
+        padding: 0 !important;
+    }
+    .cafe img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
