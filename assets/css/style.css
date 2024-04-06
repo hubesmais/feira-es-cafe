@@ -138,4 +138,7 @@ button:hover {
         width: 100%;
         object-fit: cover;
     }
+    button{
+        margin: 5rem 0;
+    }
 }
