@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "Bonn Light";
+    src: url("../fonts/Bonn\ BF\ ExtraLight.otf")
+}
+
+@font-face {
+    font-family: "Bonn Bold";
+    src: url("../fonts/Bonn\ BF\ Black.otf")
+}
+
+body { 
+    overflow-x: hidden; 
+    background-color: #1F644D;
+}
+
+.hero img {
+    width: 100vw;
+}
+
+.cafe {
+    background-color: #F3981C;
+}
+
+.cafe img {
+    height: 3rem;
+    min-width: 100vw;
+}
+
+.programacao {
+    background-color: #F3981C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.programacao .chamada p {
+    font-family: "Nunito", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1F644D;
+}
+
+.prog {
+    padding-top: 1em;
+    text-align: center;
+    background-color: #F0E3DB;
+    padding: 0;
+}
+
+.tit img {
+    height: 2.5rem;
+}
+.prog .tit {
+    padding-top: .8rem !important;
+    padding-bottom: .4rem !important;
+}
+
+.prog-sex .tit {
+    background-color: #1F644D;
+}
+
+.prog-sab .tit {
+    background-color: #CA4024;
+}
+
+.programacao h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    color: #F0E3DB;
+}
+
+.destaque-1 {
+    font-family: "Bonn Bold";
+    font-size: 2.2rem;
+}
+
+.destaque-2 {
+    font-family: "Bonn Light";
+}
+
+.detalhes {
+    max-height: 75vh;
+    overflow-y: scroll;
+    padding: 2rem;
+    margin: 0;
+}
+
+.detalhes p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    color:black;
+    text-align: justify;
+    font-weight: 800;
+    color: #1F644D;
+}
+
+.detalhes::-webkit-scrollbar {
+    width: 7px;
+}
+
+.detalhes::-webkit-scrollbar-track {
+    background-color: #D3C4BC; 
+}
+
+.prog-sex .detalhes::-webkit-scrollbar-thumb {
+    background: #1F644D; 
+}
+
+.prog-sab .detalhes::-webkit-scrollbar-thumb {
+    background: #CA4024; 
+}
+
+button {
+    background-color: #CA4024;
+    color: #F0E3DB;
+    border: none;
+    padding-right: 1.2em;
+    padding-left: 1.2em;
+
+    text-transform: uppercase;
+    font-family: "Bonn Bold";
+    margin: 5rem;
+    border-radius: 100px;
+    font-size: 2.3rem;
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+button:hover {
+    background-color: #F0E3DB;
+    color: #CA4024;
+}
