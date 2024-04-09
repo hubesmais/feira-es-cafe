@@ -333,4 +333,7 @@ i {
     .programacao{
         margin-top: -1rem;
     }
+    .graf-1{
+        display: none;
+    }
 }
