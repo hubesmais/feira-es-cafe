@@ -349,11 +349,16 @@ i {
     }
     .ilustra img{
         bottom: -2rem;
-        left: 15rem;
+        right: -14rem;
         position: relative;
     }
     .icons{
         top: 16rem;
         right: 2rem;
+    }
+}
+@media (max-width: 375px) {
+    button{
+        font-size: 1.5rem;
     }
 }
