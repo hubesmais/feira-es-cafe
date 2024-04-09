@@ -333,7 +333,10 @@ i {
     .programacao{
         margin-top: -1rem;
     }
-    .graf-1{
+    .graf-1,
+    .graf-3,
+    .graf-4,
+    .graf-5 {
         display: none;
     }
 }
