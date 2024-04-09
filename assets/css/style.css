@@ -357,7 +357,7 @@ i {
         right: 2rem;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 397px) {
     button{
         font-size: 1.5rem;
     }
