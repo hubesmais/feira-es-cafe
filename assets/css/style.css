@@ -336,7 +336,24 @@ i {
     .graf-1,
     .graf-3,
     .graf-4,
-    .graf-5 {
+    .graf-5,
+    .graf-7,
+    .photo{
         display: none;
+    }
+    .logo{
+        margin-top: -3rem;
+    }
+    .infos{
+        margin-right: -8rem;
+    }
+    .ilustra img{
+        bottom: -2rem;
+        left: 15rem;
+        position: relative;
+    }
+    .icons{
+        top: 16rem;
+        right: 2rem;
     }
 }
