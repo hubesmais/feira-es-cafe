@@ -310,10 +310,11 @@ i {
     position: absolute;
     bottom: 4rem;
 }
-
+footer{
+    background-color: #F0E3DB;
+}
 .bottom-footer {
     position: relative;
-    background-color: #F0E3DB;
 }
 
 .regua {
