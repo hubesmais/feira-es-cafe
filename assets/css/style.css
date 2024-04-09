@@ -347,10 +347,9 @@ i {
     .infos{
         margin-right: -8rem;
     }
-    .ilustra img{
+    .ilustra{
         bottom: -2rem;
         right: -14rem;
-        position: relative;
     }
     .icons{
         top: 16rem;
