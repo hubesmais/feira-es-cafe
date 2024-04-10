@@ -19,6 +19,10 @@ ul, li {
     margin: 0;
 }
 
+a {
+    color: #F0E3DB;
+}
+
 .hero img {
     width: 100vw;
 }
@@ -153,9 +157,9 @@ ul, li {
 }
 
 .detalhes p {
-    font-family: "Nunito", sans-serif";
+    font-family: "Nunito", sans-serif;
     font-size: 1rem;
-    text-align: justify;
+    text-align: left;
     font-weight: 400;
     color: #1F644D;
 }
@@ -322,15 +326,88 @@ i {
 }
 
 /*Media Queries*/
+@media (min-width: 991px) {
+.hero-mob {
+    display: none;
+}
+}
 @media (max-width: 991px) {
-    .cafe img{
-        width: 100%;
-        object-fit: cover;
-    }
+html {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+.hero,
+.graf-1,
+.graf-2,
+.graf-3,
+.graf-4,
+.graf-5,
+.graf-6,
+.graf-7, 
+.photo img, 
+.ilustra img{
+    display: none;
+}
+.icons, 
+.graf-7 {
+    position: initial;
+}
+.hero-mob img {
+    width: 100vw;
+    height: auto;
+}
+.programacao{
+    margin-top: -1rem;
+}
+.cafe img{
+    width: 100%;
+    object-fit: cover;
+    height: 1.5rem;
+}
+button {
+    font-size: 1.5rem;
+}
+.prog {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.social-mob {
+    min-height: 332px;
+    flex-wrap: wrap;
+    justify-content: center !important;
+}
+.logo img {
+    height: 26.8px;
+}
+.regua {
+    flex-direction: column !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.parceiros, 
+.realizadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.parceiros img, 
+.realizadores img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 35vw;
+}
+.graf-8 img {
+    width: 800px !important;
+    right: 0;
+    bottom: 4rem;
+}
+.tit h3{
+    font-size: .7rem;
+}
+}
+@media (max-width: 397px) {
     button{
-        margin: 5rem 0;
-    }
-    .programacao{
-        margin-top: -1rem;
+        font-size: 1.6rem;
+        margin: 2rem;
     }
 }
