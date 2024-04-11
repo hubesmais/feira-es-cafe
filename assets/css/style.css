@@ -332,6 +332,7 @@ i {
 }
 
 .bottom-footer {
+    padding: 0;
     position: relative;
     background-color: #F0E3DB;
 }
@@ -340,49 +341,82 @@ i {
     padding-top: 4.5rem;
     padding-bottom: 7rem;
 }
+.realizadores,
+.parceiros{
+    justify-content: space-between;
+}
 
 /*Media Queries*/
-/* @media (min-width: 992px) {
-    .hero-mob {
-        display: none;
+
+@media (min-width: 1400px) {
+    .regua .gutter{
+        --bs-gutter-x: 3rem;
     }
-} added classe do bs*/
+    .parceria{
+        padding: 0;
+    }
+    .graf-8{
+        height: 17rem;
+        top: 0;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1500px) {
+    .realizadores,
+    .parceiros{
+        justify-content: flex-start;
+    }
+    .realizacao{
+        padding-right: 6rem;
+    }
+}
+@media (min-width: 1730px) {
+    .graf-8{
+        height: 26rem;
+        top: 0;
+    }
+    .bottom-footer{
+        padding-bottom: 10rem;
+    }
+}
+@media (max-width: 1281px) {
+    .programacao time {
+        font-size: 1.5rem;
+    }
+    .regua{
+        max-width: 70rem;
+    }
+}
+@media (max-width: 1024px) {
+    .programacao time {
+        font-size: 1rem;
+    }
+    .regua{
+        max-width: 43rem;
+    }
+
+}
 @media (max-width: 991px) {
     html {
         overflow-x: hidden;
         max-width: 100vw;
     }
-    /*.hero, added classe do bs
-    .graf-1,
-    .graf-2,
-    .graf-3,
-    .graf-4,
-    .graf-5,
-    .graf-6,
-    .graf-7, 
-    .photo img, 
-    .ilustra img{
-        display: none;
-    }*/
     .icons, 
     .graf-7 {
         position: initial;
     }
     .hero-mob {
-        /*width: 100vw;*/
         height: auto;
     }
     .cafe img {
-        /*width: 100%; add classe do bs
-        object-fit: cover;*/
-        min-height: 1.5rem; /*alterei aqui para min-height */
+        min-height: 1.5rem;
     }
     .botao {
         flex-direction: column;
         margin-bottom: -11.1rem;
     }
     .botao a {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-bottom: 2rem;
     }
     .prog {
@@ -392,7 +426,7 @@ i {
     .social-mob {
         min-height: 332px;
         flex-wrap: wrap;
-        padding: 2rem 0 3rem 1.5rem;
+        padding: 5rem 0 3rem 1.5rem;
     }
     .graf-footer-mob{
         height: 100px;
@@ -405,15 +439,14 @@ i {
         height: 26.8px;
     }
     .regua {
-        flex-direction: column !important;
         padding-left: 2rem;
         padding-right: 2rem;
+        max-width: 32rem;
     }
     .parceiros, 
     .realizadores {
-        /* display: flex; */
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .parceiros img, 
     .realizadores img {
@@ -425,14 +458,98 @@ i {
         width: 800px !important;
         right: 0;
         bottom: 4rem;
+        margin-right: -1rem;
     }
     .tit h3{
         font-size: .7rem;
     }
 }
-@media (max-width: 397px) {
+@media (max-width: 768px) {
+    .botao {
+        margin-bottom: -19.1rem;
+    }
+}
+@media (max-width: 767px) {
+    .botao {
+        margin-bottom: -14.2rem;
+    }
+}
+@media (max-width: 575px) {
+    .botao {
+        margin-bottom: -15.2rem;
+    }
+}
+@media (max-width: 475px) {
+    .botao {
+        margin-bottom: -13.1rem;
+    }
+}
+@media (max-width: 426px) {
+    .botao {
+        margin-bottom: -11.1rem;
+    }
+    .programacao time {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 403px){
+    .programacao time {
+    font-size: 1.4rem;
+}
+}
+@media (max-width: 396px) {
+    .chamada{
+        font-size: 1.5rem;
+    }
+    .programacao time {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 386px){
+    .programacao time {
+    font-size: 1.2rem;
+}
+}
+@media (max-width: 377px){
+    .programacao time {
+    font-size: 1rem;
+}
+}
+@media (max-width: 375px) {
+    .botao {
+        margin-bottom: -9.7rem;
+    }
+}
+@media (max-width: 360px){
+    .programacao time {
+        font-size: .9rem;
+    }
+}
+@media (max-width: 351px){
+    .programacao time {
+        font-size: .8rem;
+    }
+}
+@media (max-width: 342px){
+    .programacao time {
+        font-size: .7rem;
+    }
+}
+@media (max-width: 333px){
+    .programacao time {
+        font-size: .6rem;
+    }
+}
+@media (max-width: 325px){
+    .programacao time {
+        font-size: .5rem;
+    }
+}
+@media (max-width: 320px) {
+    .botao {
+        margin-bottom: -8.2rem;
+    }
     .botao a{
-        font-size: 1.6rem;
         margin: 2rem;
     }
 }
