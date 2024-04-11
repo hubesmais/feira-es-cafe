@@ -21,10 +21,12 @@ ul, li {
 
 a {
     color: #F0E3DB;
+    text-decoration: none;
 }
 
-.hero img {
+.hero {
     width: 100vw;
+    padding: 0;
 }
 
 .cafe {
@@ -32,27 +34,31 @@ a {
 }
 
 .cafe img {
-    height: 3rem;
+    /*height: 3rem; estava deformando em alguns breakpoints*/
     min-width: 100vw;
 }
 
 .programacao {
     background-color: #F3981C;
-    display: flex;
+    margin-top: -1px; /*tava com a linha aparecendo em alguns breakpoints, tirei do mobile e botei em tudo, e added classes do bs
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: relative;*/
 }
-
-.graf-1, .graf-2, .graf-3, 
+.graf {
+    position: absolute;
+    z-index: 0;
+    display: none;
+}
+/*.graf-1, .graf-2, .graf-3,
 .graf-4, .graf-5, .graf-6 {
     position: absolute;
     z-index: 0;
-}
+} criei uma classe com essas regras
 
 .tit, .detalhes {
     z-index: 15;
-}
+}*/
 
 .graf-1 {
     top: 0;
@@ -64,10 +70,10 @@ a {
     right: 0;
 }
 
-.prog-sex {
+/*.prog-sex {
     position: relative;
     z-index: 10;
-}
+} redundante*/
 
 .graf-3 {
     height: 13.5rem;
@@ -97,7 +103,7 @@ a {
     top: 25%;
 }
 
-.programacao .chamada p {
+.chamada {
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
     font-weight: 900;
@@ -105,19 +111,19 @@ a {
 }
 
 .prog {
-    padding-top: 1em;
+    /*padding-top: 1em; sobrescrito pelo padding abaixo*/
     text-align: center;
     padding: 0;
     z-index: 1;
     position: relative;
 }
 
-.tit img {
+.grao {
     height: 2.5rem;
 }
 .prog .tit {
-    padding-top: .8rem !important;
-    padding-bottom: .4rem !important;
+    padding-top: .8rem;
+    padding-bottom: .4rem;
     z-index: 1;
     position: relative;
 }
@@ -130,7 +136,7 @@ a {
     background-color: #CA4024;
 }
 
-.programacao h2 {
+.programacao time {
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
@@ -154,27 +160,27 @@ a {
     position: relative;
     z-index: 1;
     background-color: #F0E3DB;
-}
-
-.detalhes p {
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     text-align: left;
     font-weight: 400;
     color: #1F644D;
 }
+.detalhes p{
+    margin-bottom: 1.5rem;
+}
 
-.detalhes p .destaque-3 {
+.destaque-3 {
     color: #CA4024;
     font-weight: 800;
 }
 
-.detalhes p .destaque-4 {
+.destaque-4 {
     color: #1F644D;
     font-weight: 800;
 }
 
-.detalhes p .destaque-5 {
+.destaque-5 {
     color: #CA4024;
 }
 
@@ -194,7 +200,7 @@ a {
     background: #CA4024; 
 }
 
-button {
+.botao a {
     background-color: #CA4024;
     color: #F0E3DB;
     border: none;
@@ -210,9 +216,13 @@ button {
     z-index: 1;
 }
 
-button:hover {
+.botao a:hover {
     background-color: #F0E3DB;
     color: #CA4024;
+}
+.ilustra-mob{
+    margin: 0 2rem;
+    padding-bottom: 1.8rem;
 }
 
 footer .top-footer {
@@ -243,6 +253,9 @@ footer .top-footer {
     font-style: italic;
     margin: 0;
 }
+.zap{
+    margin-bottom: .2rem;
+}
 
 .top-footer ul, li {
     font-family: "Nunito", sans-serif;
@@ -268,13 +281,16 @@ hr {
     right: 0;
     padding-right: 0;
 }
+.graf-7 img{
+    width: 362px;
+}
 
 .icons {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #F0E3DB;
     position: absolute;
-    top: 155px;
-    right: 190px;
+    top: 13rem;
+    right: 18rem;
     z-index: 2;
 }
 
@@ -309,7 +325,7 @@ i {
     padding-bottom: 1rem;
 }
 
-.graf-8 img {
+.graf-8 {
     width: 100vw;
     position: absolute;
     bottom: 4rem;
@@ -326,87 +342,96 @@ i {
 }
 
 /*Media Queries*/
-@media (min-width: 991px) {
-.hero-mob {
-    display: none;
-}
-}
+/* @media (min-width: 992px) {
+    .hero-mob {
+        display: none;
+    }
+} added classe do bs*/
 @media (max-width: 991px) {
-html {
-    overflow-x: hidden;
-    max-width: 100vw;
-}
-.hero,
-.graf-1,
-.graf-2,
-.graf-3,
-.graf-4,
-.graf-5,
-.graf-6,
-.graf-7, 
-.photo img, 
-.ilustra img{
-    display: none;
-}
-.icons, 
-.graf-7 {
-    position: initial;
-}
-.hero-mob img {
-    width: 100vw;
-    height: auto;
-}
-.programacao{
-    margin-top: -1rem;
-}
-.cafe img{
-    width: 100%;
-    object-fit: cover;
-    height: 1.5rem;
-}
-button {
-    font-size: 1.5rem;
-}
-.prog {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-.social-mob {
-    min-height: 332px;
-    flex-wrap: wrap;
-    justify-content: center !important;
-}
-.logo img {
-    height: 26.8px;
-}
-.regua {
-    flex-direction: column !important;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-.parceiros, 
-.realizadores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.parceiros img, 
-.realizadores img {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    max-width: 35vw;
-}
-.graf-8 img {
-    width: 800px !important;
-    right: 0;
-    bottom: 4rem;
-}
-.tit h3{
-    font-size: .7rem;
-}
+    html {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    /*.hero, added classe do bs
+    .graf-1,
+    .graf-2,
+    .graf-3,
+    .graf-4,
+    .graf-5,
+    .graf-6,
+    .graf-7, 
+    .photo img, 
+    .ilustra img{
+        display: none;
+    }*/
+    .icons, 
+    .graf-7 {
+        position: initial;
+    }
+    .hero-mob {
+        /*width: 100vw;*/
+        height: auto;
+    }
+    .cafe img {
+        /*width: 100%; add classe do bs
+        object-fit: cover;*/
+        min-height: 1.5rem; /*alterei aqui para min-height */
+    }
+    .botao {
+        flex-direction: column;
+        margin-bottom: -11.1rem;
+    }
+    .botao a {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .prog {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .social-mob {
+        min-height: 332px;
+        flex-wrap: wrap;
+        padding: 2rem 0 3rem 1.5rem;
+    }
+    .graf-footer-mob{
+        height: 100px;
+    }
+    .nav-mob{
+        padding-top: 3rem;
+        margin: 0 auto;
+    }
+    .logo img {
+        height: 26.8px;
+    }
+    .regua {
+        flex-direction: column !important;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .parceiros, 
+    .realizadores {
+        /* display: flex; */
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .parceiros img, 
+    .realizadores img {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        max-width: 35vw;
+    }
+    .graf-8 {
+        width: 800px !important;
+        right: 0;
+        bottom: 4rem;
+    }
+    .tit h3{
+        font-size: .7rem;
+    }
 }
 @media (max-width: 397px) {
-    button{
+    .botao a{
         font-size: 1.6rem;
         margin: 2rem;
     }

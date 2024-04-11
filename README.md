@@ -1,2 +1,3 @@
 # feira-es-cafe
-# feira-es-cafe
+Added favicon
+
