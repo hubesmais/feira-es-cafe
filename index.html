@@ -5,10 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Feira ES+ Café | Hub ES+</title>
+        <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
         <meta name="description" content="Hotsite feito pela Coordenação Web e Dados do Hub ES+ para Feira ES+ Café">
         <meta name="author" content="Coordenação Web e Dados do Hub ES+" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,220 +18,271 @@
     </head>
 
     <body>
-        <section class="hero container-fluid p-0">
-            <img src="assets/img/Hero.png" alt="Banner da Feira ES+ Café, contendo a logo do Hub ES+ e data do evento (19 e 20/04/2024)">
+        <!-- <section class="hero container-fluid p-0"> -->
+        <img class="hero d-none d-lg-block" src="./assets/img/Hero.png" alt="Banner da Feira ES+ Café, contendo a logo do Hub ES+ e data do evento (19 e 20/04/2024)">
+        <!-- </section> -->
+        <!-- <section class="hero-mob container-fluid p-0"> -->
+        <img class="hero hero-mob d-lg-none" src="./assets/img/banner_mob.svg" alt="Banner da Feira ES+ Café, contendo a logo do Hub ES+ e data do evento (19 e 20/04/2024)">
+        <!-- </section> -->
+        <section class="cafe py-4">
+            <img class="w-100 object-fit-cover" src="./assets/img/graos.png" alt="">
         </section>
-        <section class="hero-mob container-fluid p-0">
-            <img src="./assets/img/banner_mob.svg" alt="Banner da Feira ES+ Café, contendo a logo do Hub ES+ e data do evento (19 e 20/04/2024)"></section>
-        </section>
-        <section class="container-fluid cafe d-flex justify-content-center py-4">
-            <img src="assets/img/graos.png">
-        </section>
-        <section class="programacao d-flex">
-            <img src="./assets/img/graf-1.png" class="graf-1" alt="">
-            <img src="./assets/img/graf-2.png" class="graf-2" alt="">
+        <main class="programacao d-flex justify-content-center align-items-center position-relative"> <!--alterei a section para main, para ser html semântico-->
+            <img class="graf graf-1 d-lg-block" src="./assets/img/graf-1.svg" alt="">
+            <img class="graf graf-2 d-lg-block" src="./assets/img/graf-2.svg" alt="">
             <section class="container">
-                <div class="chamada text-center py-5">
-                    <p>Conheça a programação completa e participe!</p>
-                </div>
-                <div class="principal row d-flex justify-content-evenly row-gap-5">
-                    <div class="col-md-4 prog prog-sex">
-                        <img src="./assets/img/graf-3.png" class="graf-3" alt="">
-                        <img src="./assets/img/graf-4.png" class="graf-4" alt="">
-                        <div class="tit px-3 d-flex display-row justify-content-between">
-                            <img src="assets/img/grao-esq.png" class="grao">
-                            <h2><span class="destaque-1">19/04</span> <span class="destaque-2"> (Sexta)</span></h2>
-                            <img src="assets/img/grao-esq.png" class="grao">
-                        </div>
-                        <div class="detalhes">
+                <!-- <div class="chamada text-center py-5"> -->
+                <p class="chamada text-center py-5">Conheça a programação completa e participe!</p>
+                <!-- </div> -->
+                <section class="row d-flex justify-content-evenly row-gap-5">
+                    <section class="col-md-4 prog prog-sex">
+                        <img class="graf graf-3 d-lg-block" src="./assets/img/graf-3.svg" alt="">
+                        <img class="graf graf-4 d-lg-block" src="./assets/img/graf-4.svg" alt="">
+                        <section class="tit px-3 d-flex justify-content-between">
+                            <img src="./assets/img/grao-esq.svg" class="grao" alt="">
+                            <time datetime="2024-04-19"><!--add time para html semântico e SEO-->
+                                <span class="destaque-1">19/04</span>
+                                <span class="destaque-2"> (Sexta)</span>
+                            </time>
+                            <img src="./assets/img/grao-dir.svg" class="grao" alt="">
+                        </section>
+                        <article class="detalhes"><!--add article para html semântico-->
                             <p>
-                                <span class="destaque-3">09h |</span> <span class="destaque-4">Cerimônia de Abertura</span> <br>
-                                <span class="destaque-3">| Aberto e gratuito |</span><br><br>
-
-                                <span class="destaque-3">09h - 13h |</span> <span class="destaque-4">Oficina Maker - Fotografia Gastronômica</span> 
-                                <span class="destaque-5"><i>//Facilitadora:</span> Natália Rabelo (fotógrafa gastronômica).</i><br>
-                                <span class="destaque-3">| Inscrições abertas |</span><br><br>
-
-                                <span class="destaque-3">09h30 - 11h30 |</span> <span class="destaque-4">Painel - Origens e trajetória do café:</span> da planta à xícara 
-                                <span class="destaque-5"><i>//Mediador:</span> Marcelo Moreno (barista, instrutor, consultor, competidor e curador da feira ES+CAFÉ). 
-                                <span class="destaque-5">//Participantes:</span> Deneval Miranda Vieira Jr. (cafeicultura premiado - Sítio Cordilheiras do Caparaó), Deneval Miranda (cafeicultor premiado - Sítio Cordilheiras do Caparaó), Leonardo Machado (barista, torrefador, empreendedor, competidor e designer - Hub Natural e Quintal do Armazém Cafeteria), Waschintom Mageski (barista e torrefador).</i><br>
-                                <span class="destaque-3">| Inscrições abertas |</span><br><br>
-                                
-                                <span class="destaque-3">11h30 - 13h30 |</span> <span class="destaque-4">Aula Show - Harmonização gastronômica com cafés especiais</span> 
-                                <span class="destaque-5"><i>//Facilitador:</span> Erivelton Smith (consultor de cafeterias, mentor, mestre de torras e instrutor de cursos de barista). <span class="destaque-5">//Cafeteria convidada:</span> Colher de Pau Cafeteria e Bistrô.</i><br>
-                                <span class="destaque-3">| Aberto e gratuito |</span><br><br>
-                                
-                                <span class="destaque-3">14h - 16h |</span> <span class="destaque-4">Painel - Associativismo e mulheres do café</span> 
-                                <span class="destaque-5"><i>//Mediadora:</span> Kátia Quedevez (Jornalista, editora e idealizadora - revista e portal de notícias Conexão Safra, Anuário do Agronegócio Capixaba, Safrinha HQ). 
+                                <span class="destaque-3">09h |</span> 
+                                <span class="destaque-4">Cerimônia de Abertura</span><br>
+                                <span class="destaque-3">| Aberto e gratuito |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">09h - 13h |</span> 
+                                <span class="destaque-4">Oficina Maker - Fotografia Gastronômica</span> 
+                                <span class="destaque-5"><em>//Facilitadora:</span> Natália Rabelo (fotógrafa gastronômica).</em><br> <!--no caso, o <em> é mais semântico que o <i>-->
+                                <span class="destaque-3">| Inscrições abertas |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">09h30 - 11h30 |</span> 
+                                <span class="destaque-4">Painel - Origens e trajetória do café:</span> da planta à xícara 
+                                <span class="destaque-5"><em>//Mediador:</span> Marcelo Moreno (barista, instrutor, consultor, competidor e curador da feira ES+CAFÉ). 
+                                <span class="destaque-5">//Participantes:</span> Deneval Miranda Vieira Jr. (cafeicultura premiado - Sítio Cordilheiras do Caparaó), Deneval Miranda (cafeicultor premiado - Sítio Cordilheiras do Caparaó), Leonardo Machado (barista, torrefador, empreendedor, competidor e designer - Hub Natural e Quintal do Armazém Cafeteria), Waschintom Mageski (barista e torrefador).</em><br>
+                                <span class="destaque-3">| Inscrições abertas |</span> 
+                            </p>
+                            <p>
+                                <span class="destaque-3">11h30 - 13h30 |</span> 
+                                <span class="destaque-4">Aula Show - Harmonização gastronômica com cafés especiais</span> 
+                                <span class="destaque-5"><em>//Facilitador:</span> Erivelton Smith (consultor de cafeterias, mentor, mestre de torras e instrutor de cursos de barista). <span class="destaque-5">//Cafeteria convidada:</span> Colher de Pau Cafeteria e Bistrô.</em><br>
+                                <span class="destaque-3">| Aberto e gratuito |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">14h - 16h |</span> 
+                                <span class="destaque-4">Painel - Associativismo e mulheres do café</span> 
+                                <span class="destaque-5"><em>//Mediadora:</span> Kátia Quedevez (Jornalista, editora e idealizadora - revista e portal de notícias Conexão Safra, Anuário do Agronegócio Capixaba, Safrinha HQ). 
                                 <span class="destaque-5">//Participantes:</span> Elena Moreno (cafeicultora, ex presidente da associação dos cafés especiais de Ibatiba, vencedora de prêmios e concursos), Helen Lima (cafeicultora - Associação Pó de Mulheres), Kissia Dal'Orto (cafeicultora - Fazenda Flor de Lis), Lucia Helena Barros (barista e consultora), Rosa Helena (cafeicultura premiada - Sítio Cordilheiras do Caparaó).<br>
-                                <span class="destaque-3"></i>| Inscrições abertas |</span><br><br>
-                                                                
-                                <span class="destaque-3">14h - 18h |</span> <span class="destaque-4">Oficina Maker - Criação de cardápios de cafeteria</span> 
-                                <span class="destaque-5"><i>//Facilitadora:</span> Nati Nobre (geógrafa, barista e pesquisadora do café).</i><br>
-                                <span class="destaque-3">| Inscrições abertas |</span><br><br>
-                                
-                                <span class="destaque-3">16h - 17h |</span> <span class="destaque-4"> Aula Show - Métodos de extração e preparo de café</span> 
-                                <span class="destaque-5"><i>//Facilitador:</span> Erivelton Smith (consultor de cafeterias, mentor, mestre de torras e instrutor de cursos de barista).</i><br>
-                                <span class="destaque-3">| Aberto e gratuito |</span><br><br>
-                                
-                                <span class="destaque-3">17h - 19h |</span> <span class="destaque-4">Masterclass - Cafeteria modelo:</span> a importância da arquitetura para o sucesso do negócio 
-                                <span class="destaque-5"><i>//Palestrante:</span> Victor Brandão (arquiteto e consultor especializado em montagem de cafeteiras - Brandão Studio).</i><br>
-                                <span class="destaque-3">| Inscrições abertas |</span><br><br>
-                                
-                                <span class="destaque-3">19h - 20h |</span> <span class="destaque-4">Campeonato de Latte Art (TNT)</span>
-                                <span class="destaque-5"><i>//Mediador:</span> Marcelo Moreno (barista, instrutor, consultor, competidor e curador da feira ES+CAFÉ).</i><br>
-                                <span class="destaque-3">| Inscrições abertas |</span><br><br>
-                                
-                                <span class="destaque-3">19h - 20h |</span> <span class="destaque-4"> Campeonato de Latte Art (TNT)</span><br>                                
-                                <span class="destaque-3">10h - 20h |</span> <span class="destaque-4"> Exposição e vendas de produtos</span><br>                                
-                                <span class="destaque-3">17h - 19h |</span> <span class="destaque-4"> Discotecagem - DJ Jader</span><br>                                
-                                <span class="destaque-3">19h - 20h |</span> <span class="destaque-4"> Banda de Congo - Amores da Lua</span><br>
-                                <span class="destaque-3">| Aberto e gratuito |</span>
+                                <span class="destaque-3"></em>| Inscrições abertas |</span>
                             </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 prog prog-sab">
-                        <img src="./assets/img/graf-5.png" class="graf-5" alt="">
-                        <img src="./assets/img/graf-6.png" class="graf-6" alt="">
-                        <div class="tit px-3 d-flex display-row justify-content-between">
-                            <img src="assets/img/grao-esq.png" class="grao">
-                            <h2><span class="destaque-1">20/04</span> <span class="destaque-2"> (Sábado)</span></h2>                            
-                            <img src="assets/img/grao-esq.png" class="grao">                                                        
-                        </div>
-                        <div class="detalhes">
                             <p>
-                                <span class="destaque-3">09h - 18h |</span> <span class="destaque-4">Maratona Criativa - Design de embalagens de café </span>
-                                <span class="destaque-5"><i>//Facilitadora:</span> Juliana Lisboa (Designer e Co-fundadora da Cidade Quintal e A Fantástica Carpintaria).</i><br>
-                                <span class="destaque-3">| Inscrições abertas |</span><br><br>
-
-                                <span class="destaque-3">09h - 10h |</span> <span class="destaque-4">Aula Show - Métodos de extração e preparo do café </span>
-                                <span class="destaque-5"><i>//Facilitadora:</span> Thaís Ferreira da Silva (barista e pós-graduada em cafeicultura).</i><br>
-                                <span class="destaque-3">| Aberto e gratuito |</span><br><br>
-
-                                <span class="destaque-3">10h - 12h |</span> <span class="destaque-4">Painel - Café, turismo e sustentabilidade</span> 
-                                <span class="destaque-5"><i>//Mediador:</span> Glauco Gomes (consultor credenciado do Sebrae-ES).  
-                                <span class="destaque-5">//Participantes:</span> Carol Malta (cafeicultora, pós-graduada em cafeicultura sustentável - Associação Gestora da Denominação de Origem do Caparaó), David Florenço (promotor de cafés especiais e gestor de Projetos e Turismo - Prefeitura de Iúna-ES), Fabiano Tristão (coordenador estadual de cafeicultura - Incaper), Rosa Helena (cafeicultura premiada - Sítio Cordilheiras do Caparaó).</i><br>
-                                <span class="destaque-3">| Inscrições abertas |</span><br><br>
-
-                                <span class="destaque-3">14h -15h |</span> <span class="destaque-4">Aula Show - Entenda os rótulos de cafés especiais</span> 
-                                <span class="destaque-5"><i>//Facilitador:</span> João Carneiro (barista e instrutor técnico de cafeterias).</i><br>
-                                <span class="destaque-3">| Inscrições abertas |</span><br><br>
-
-                                <span class="destaque-3"> 14h - 16h |</span> <span class="destaque-4"> Oficina - Iniciação à degustação de café (cupping)</span>  
-                                <span class="destaque-5"><i>/Facilitador:</span> Alexandre Bergamim (torrefador, atua com corretagem e exportação de cafés, classificador e degustador).</i><br>
-                                <span class="destaque-3">| Inscrições abertas |</span><br><br>
-
-                                <span class="destaque-3">15h - 17h |</span> <span class="destaque-4">Roda de conversa - Baristas do Espírito Santo e a importância do associativismo </span>
-                                <span class="destaque-5"><i>//Mediador:</span> Marcelo Moreno (barista, instrutor, consultor, competidor e curador da feira ES+CAFÉ).</i><br>
-                                <span class="destaque-3">| Inscrições abertas |</span><br><br>
-
-                                <span class="destaque-3">15h - 17h |</span> <span class="destaque-4">Aula show - O protagonismo do café na gastronomia</span> 
-                                <span class="destaque-5"><i>//Facilitadoras:</span> Laís Pagung Ribeiro (professora e coordenadora no curso Técnico em Gastronomia do CEET Vasco Coutinho), Luana Evelyn Rosa de Sousa (Professora e coordenadora do curso de gastronomia do CEET Vasco Coutinho).</i><br>
-                                <span class="destaque-3">| Aberto e gratuito |</span><br><br>
-
-                                <span class="destaque-3">17h - 19h |</span> <span class="destaque-4">Masterclass - O universo da torra </span>
-                                <span class="destaque-5"><i>//Palestrante:</span> Jonathan Piazarolo (mestre de torra, sócio proprietário - Trentino Torra de Cafés).</i><br>
-                                <span class="destaque-3">| Inscrições abertas |</span><br><br>
-
-                                <span class="destaque-3">17h - 18h |</span> <span class="destaque-4">Discotecagem - DJ Sista Ilú</span><br>
-                                <span class="destaque-3">18h - 18h50 |</span> <span class="destaque-4">Apresentação musical - Borabaez</span><br>
-                                <span class="destaque-3">19h10 - 20h00 |</span> <span class="destaque-4">Apresentação musical - Pretaô</span><br>
+                                <span class="destaque-3">14h - 18h |</span> 
+                                <span class="destaque-4">Oficina Maker - Criação de cardápios de cafeteria</span> 
+                                <span class="destaque-5"><em>//Facilitadora:</span> Nati Nobre (geógrafa, barista e pesquisadora do café).</em><br>
+                                <span class="destaque-3">| Inscrições abertas |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">16h - 17h |</span> 
+                                <span class="destaque-4"> Aula Show - Métodos de extração e preparo de café</span> 
+                                <span class="destaque-5"><em>//Facilitador:</span> Erivelton Smith (consultor de cafeterias, mentor, mestre de torras e instrutor de cursos de barista).</em><br>
                                 <span class="destaque-3">| Aberto e gratuito |</span>
                             </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="botao d-flex justify-content-center">
-                    <button>Inscreva-se</button>
-                </div>
+                            <p>
+                                <span class="destaque-3">17h - 19h |</span> 
+                                <span class="destaque-4">Masterclass - Cafeteria modelo:</span> a importância da arquitetura para o sucesso do negócio 
+                                <span class="destaque-5"><em>//Palestrante:</span> Victor Brandão (arquiteto e consultor especializado em montagem de cafeteiras - Brandão Studio).</em><br>
+                                <span class="destaque-3">| Inscrições abertas |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">19h - 20h |</span> 
+                                <span class="destaque-4">Campeonato de Latte Art (TNT)</span>
+                                <span class="destaque-5"><em>//Mediador:</span> Marcelo Moreno (barista, instrutor, consultor, competidor e curador da feira ES+CAFÉ).</em><br>
+                                <span class="destaque-3">| Inscrições abertas |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">19h - 20h |</span> 
+                                <span class="destaque-4"> Campeonato de Latte Art (TNT)</span><br>                                
+                                <span class="destaque-3">10h - 20h |</span> 
+                                <span class="destaque-4"> Exposição e vendas de produtos</span><br>                                
+                                <span class="destaque-3">17h - 19h |</span> 
+                                <span class="destaque-4"> Discotecagem - DJ Jader</span><br>                                
+                                <span class="destaque-3">19h - 20h |</span> 
+                                <span class="destaque-4"> Banda de Congo - Amores da Lua</span><br>
+                                <span class="destaque-3">| Aberto e gratuito |</span>
+                            </p>
+                        </article>
+                    </section>
+                    <section class="col-md-4 prog prog-sab">
+                        <img class="graf graf-5 d-lg-block"  src="./assets/img/graf-5.svg" alt="">
+                        <img  class="graf graf-6 d-lg-block" src="./assets/img/graf-6.svg" alt="">
+                        <section class="tit px-3 d-flex display-row justify-content-between">
+                            <img src="./assets/img/grao-esq.svg" class="grao">
+                            <time datetime="2024-04-20">
+                                <span class="destaque-1">20/04</span> 
+                                <span class="destaque-2"> (Sábado)</span>
+                            </time>
+                            <img src="./assets/img/grao-dir.svg" class="grao">
+                        </section>
+                        <article class="detalhes">
+                            <p>
+                                <span class="destaque-3">09h - 18h |</span> 
+                                <span class="destaque-4">Maratona Criativa - Design de embalagens de café</span> 
+                                <span class="destaque-5"><em>//Facilitadora:</span> Juliana Lisboa (Designer e Co-fundadora da Cidade Quintal e A Fantástica Carpintaria).</em><br>
+                                <span class="destaque-3">| Inscrições abertas |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">09h - 10h |</span> 
+                                <span class="destaque-4">Aula Show - Métodos de extração e preparo do café</span> 
+                                <span class="destaque-5"><em>//Facilitadora:</span> Thaís Ferreira da Silva (barista e pós-graduada em cafeicultura).</em><br>
+                                <span class="destaque-3">| Aberto e gratuito |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">10h - 12h |</span> 
+                                <span class="destaque-4">Painel - Café, turismo e sustentabilidade</span> 
+                                <span class="destaque-5"><em>//Mediador:</span> Glauco Gomes (consultor credenciado do Sebrae-ES).  
+                                <span class="destaque-5">//Participantes:</span> Carol Malta (cafeicultora, pós-graduada em cafeicultura sustentável - Associação Gestora da Denominação de Origem do Caparaó), David Florenço (promotor de cafés especiais e gestor de Projetos e Turismo - Prefeitura de Iúna-ES), Fabiano Tristão (coordenador estadual de cafeicultura - Incaper), Rosa Helena (cafeicultura premiada - Sítio Cordilheiras do Caparaó).</em><br>
+                                <span class="destaque-3">| Inscrições abertas |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">14h -15h |</span> 
+                                <span class="destaque-4">Aula Show - Entenda os rótulos de cafés especiais</span> 
+                                <span class="destaque-5"><em>//Facilitador:</span> João Carneiro (barista e instrutor técnico de cafeterias).</em><br>
+                                <span class="destaque-3">| Inscrições abertas |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">14h - 16h |</span> 
+                                <span class="destaque-4">Oficina - Iniciação à degustação de café (cupping)</span> 
+                                <span class="destaque-5"><em>//Facilitador:</span> Alexandre Bergamim (torrefador, atua com corretagem e exportação de cafés, classificador e degustador).</em><br>
+                                <span class="destaque-3">| Inscrições abertas |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">15h - 17h |</span> 
+                                <span class="destaque-4">Roda de conversa - Baristas do Espírito Santo e a importância do associativismo</span>
+                                <span class="destaque-5"><em>//Mediador:</span> Marcelo Moreno (barista, instrutor, consultor, competidor e curador da feira ES+CAFÉ).</em><br>
+                                <span class="destaque-3">| Inscrições abertas |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">15h - 17h |</span> 
+                                <span class="destaque-4">Aula show - O protagonismo do café na gastronomia</span> 
+                                <span class="destaque-5"><em>//Facilitadoras:</span> Laís Pagung Ribeiro (professora e coordenadora no curso Técnico em Gastronomia do CEET Vasco Coutinho), Luana Evelyn Rosa de Sousa (Professora e coordenadora do curso de gastronomia do CEET Vasco Coutinho).</em><br>
+                                <span class="destaque-3">| Aberto e gratuito |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">17h - 19h |</span> 
+                                <span class="destaque-4">Masterclass - O universo da torra</span> 
+                                <span class="destaque-5"><em>//Palestrante:</span> Jonathan Piazarolo (mestre de torra, sócio proprietário - Trentino Torra de Cafés).</em><br>
+                                <span class="destaque-3">| Inscrições abertas |</span>
+                            </p>
+                            <p>
+                                <span class="destaque-3">17h - 18h |</span> 
+                                <span class="destaque-4">Discotecagem - DJ Sista Ilú</span><br>
+                                <span class="destaque-3">18h - 18h50 |</span> 
+                                <span class="destaque-4">Apresentação musical - Borabaez</span><br>
+                                <span class="destaque-3">19h10 - 20h00 |</span> 
+                                <span class="destaque-4">Apresentação musical - Pretaô</span><br>
+                                <span class="destaque-3">| Aberto e gratuito |</span>
+                            </p>
+                        </article>
+                    </section>
+                </section>
+                <section class="botao d-flex justify-content-center">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeknq1ezxQInuWybWjgwC7e50ZfTSiLyYTa4r6A3fP4zOIJ4g/viewform" target="_blank" role="button" aria-label="Inscreva-se">Inscreva-se</a> <!--mudei pra anchor pro link ir pra fora da página-->
+                    <img class="ilustra-mob d-lg-none" src="./assets/img/Group1.svg" alt="">
+                </section>
             </section>
-        </section>
+        </main>
         <footer class="p-0">
             <section class="top-footer">
+                <img class="d-lg-none position-absolute end-0 graf-footer-mob" src="./assets/img/graf-footer-mobile.svg" alt="">
                 <section class="social-mob container d-flex flex-row justify-content-between align-items-center">
                     <section>
-                        <div class="logo py-3">
-                            <img src="./assets/img/logo_footer.svg" alt="Logo do Hub ES+ em amarelo.">
-                        </div>
+                        <!-- <div class="logo py-3"> -->
+                        <img class="logo py-3" src="./assets/img/logo_footer.svg" alt="Logo do Hub ES+">
+                        <!-- </div> -->
                         <ul class="infos">
                             <li class="zap d-flex display-row align-baseline">
-                                <div>
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                </div>
-                                <div>
-                                    <p>&nbsp;&nbsp;(27) 99574-4755</p>
-                                </div>                                 
+                                <!-- <div> -->
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <!-- </div>
+                                <div> -->
+                                <a href="https://api.whatsapp.com/send?phone=5527995744755" target="_blank" aria-label="Whatsapp">&nbsp;&nbsp;(27) 99574-4755</a>
+                                <!-- </div>-->
                             </li>
-                            <li class="mail d-flex display-row align-baseline">
-                                <div>
-                                    <i class="fa-regular fa-envelope"></i> 
-                                </div>
-                                <div>
-                                    <p>&nbsp;&nbsp;hubes@ibcavix.org.br</p>    
-                                </div>                                
+                            <li class="d-flex display-row align-baseline">
+                                <!-- <div> -->
+                                <i class="fa-regular fa-envelope"></i> 
+                                <!-- </div>
+                                <div> -->
+                                <a href="mailto:hubes@ibcavix.org.br" target="_blank" aria-label="Email">&nbsp;&nbsp;hubes@ibcavix.org.br</a>    
+                                <!-- </div>                                 -->
                             </li>
                             <hr>
                             <!-- <img src="./assets/img/hr.png"> -->
                             <li class="location d-flex display-row align-baseline">
-                                <div>
-                                    <i class="fa-solid fa-location-dot"></i> 
-                                </div>
-                                <div>
-                                    <p>&nbsp;&nbsp;Praça Costa Pereira, 30, Centro, Vitória-ES<br>
-                                    &nbsp;&nbsp;Segunda a sábado, 08h às 20h</p>
-                                </div>
+                                <!-- <div> -->
+                                <i class="fa-solid fa-location-dot"></i> 
+                                <!-- </div>
+                                <div> -->
+                                <a href="https://maps.app.goo.gl/n91m9LCKFC7auUtB7" target="_blank" aria-label="Mapa">&nbsp;&nbsp;Praça Costa Pereira, 30, Centro, Vitória-ES<br>
+                                    &nbsp;&nbsp;Segunda a sábado, 08h às 20h</a>
+                                <!-- </div> -->
                             </li>
                         </ul>
                     </section>
-                    <section>
-                        <div class="ilustra">
-                            <img src="./assets/img/ilustra_footer.svg" alt="Ilustação de ramo de café em verde.">
-                            <div class="photo">
-                                <img src="./assets/img/photo_footer.svg" alt="Foto em preto e branco de produtor de café sorrindo enquanto segura uma cesta com grãos.">
-                            </div>
-                        </div>
-                        <div class="socials">
-                            <div class="graf-7">
-                                <img src="./assets/img/graf-footer.png" alt="Grafismos em formato de L nas cores verde e amarela.">
-                            </div>
-                            <div class="icons">
-                                <a href="https://br.linkedin.com/company/hubesmais"><i class="fa-brands fa-square-instagram"></i></a>
-                                <i class="fa-brands fa-square-whatsapp"></i>
-                                <a href="https://br.linkedin.com/company/hubesmais"><i class="fa-brands fa-linkedin""></i></a>
-                                <i class="fa-brands fa-square-youtube"></i>
-                            </div>
-                        </div>
+                    <section class="nav-mob">
+                        <!-- <div class="ilustra"> -->
+                        <img class="graf d-lg-block ilustra" src="./assets/img/ilustra.svg" alt="Ilustração de ramo de café e produtor de café sorrindo enquanto segura uma cesta com grãos">
+                            <!-- <div class="photo">
+                                <img src="./assets/img/photo_footer.svg" alt="Foto em preto e branco de produtor de café sorrindo enquanto segura uma cesta com grãos">
+                            </div> juntei as duas em uma ilustração só
+                        </div>-->
+                        <!-- <div class="socials"> -->
+                            <!-- <div class="graf graf-7 d-lg-block"> -->
+                        <img class="graf graf-7 d-lg-block" src="./assets/img/graf-footer.svg" alt="">
+                            <!-- </div> -->
+                        <nav class="icons">
+                            <a href="https://www.instagram.com/hubesmais/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                            <a href="https://br.linkedin.com/company/hubesmais" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <!-- <i class="fa-brands fa-square-youtube"></i> -->
+                        </nav>
+                        <!-- </div> -->
                     </section>
                 </section>
             </section>
             <section class="bottom-footer p-0">
-                <section class="container regua d-flex display-row justify-content-between">
-                    <section class="parceria">
-                        <div class="tit d-flex align-items-center">
-                            <h3>Parceria:</h3><hr>
-                        </div>                        
-                        <div class="parceiros display-row align-items-center">
-                            <img src="./assets/img/senac.png" alt="Logo do SENAC.">
-                            <img src="./assets/img/findes_sesi.png" alt="Logos do FINDES e SESI.">
-                            <img src="./assets/img/vascocoutinho.png" alt="Logo do Centro Estadual de Educação Técnica Vasco Coutinho.">
-                            <img src="./assets/img/incaper.png" alt="Logo do Incaper.">
-                        </div>
-                    </section>
-                    <section class="realizacao">
-                        <div class="tit d-flex align-items-center">
-                            <h3>Realização:</h3><hr>
-                        </div>    
-                        <div class="realizadores display-row align-items-center">
-                            <img src="./assets/img/ibca.png" alt="Logo do IBCA.">
-                            <img src="./assets/img/esmaiscriativo.png" alt="Logo do ES mais criativo.">
-                            <img src="./assets/img/fapes.png" alt="Logo da FAPES.">
-                            <img src="./assets/img/governodoestado.png" alt="Logo do Governo do Estado do Espírito Santo.">
-                        </div>                        
+                <section class="container regua">
+                    <section class="row row-cols-1 row-cols-lg-2 gx-5 z-1">
+                        <section class="parceria col">
+                            <div class="tit d-flex align-items-center">
+                                <h3>Parceria:</h3><hr>
+                            </div>
+                            <section class="parceiros d-flex align-items-center">
+                                <a href="https://www.es.senac.br/" target="_blank" aria-label="SENAC"><img src="./assets/img/senac.png" alt="Logo do SENAC"></a>
+                                <a href="https://findes.com.br/" target="_blank" aria-label="FINDES e SESI"><img src="./assets/img/findes_sesi.png" alt="Logos do FINDES e SESI"></a>
+                                <a href="https://vascocoutinho.ceet.secti.es.gov.br/" target="_blank" aria-label="CEET Vasco Coutinho"><img src="./assets/img/vascocoutinho.png" alt="Logo do Centro Estadual de Educação Técnica Vasco Coutinho"></a>
+                                <a href="https://incaper.es.gov.br/" target="_blank" aria-label="Incaper"><img src="./assets/img/incaper.png" alt="Logo do Incaper"></a>
+                            </section>
+                        </section>
+                        <section class="realizacao col">
+                            <div class="tit d-flex align-items-center">
+                                <h3>Realização:</h3><hr>
+                            </div>
+                            <section class="realizadores d-flex align-items-center">
+                                <a href="https://galpaoproducoes.com.br/" target="_blank" aria-label="IBCA"><img src="./assets/img/ibca.png" alt="Logo do IBCA"></a>
+                                <a href="https://esmaiscriativo.es.gov.br/" target="_blank" aria-label="ES + Criativo"><img src="./assets/img/esmaiscriativo.png" alt="Logo do ES mais criativo"></a>
+                                <a href="https://fapes.es.gov.br/" target="_blank" aria-label="FAPES"><img src="./assets/img/fapes.png" alt="Logo da FAPES"></a>
+                                <a href="https://www.es.gov.br/" target="_blank" aria-label="Governo do Estado do Espírito Santo"><img src="./assets/img/governodoestado.png" alt="Logo do Governo do Estado do Espírito Santo"></a>
+                            </section>
+                        </section>
                     </section>
                 </section>
-                <div class="graf-8">
-                    <img src="./assets/img/graf-footer-b.png" alt="Grafismo em laranja">
-                </div>
+                <!-- <div class="graf-8"> -->
+                <img class="graf-8" src="./assets/img/graf-footer-b.svg" alt="">
+                <!-- </div> -->
             </section>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
