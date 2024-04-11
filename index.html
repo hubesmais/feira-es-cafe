@@ -18,35 +18,29 @@
     </head>
 
     <body>
-        <!-- <section class="hero container-fluid p-0"> -->
         <img class="hero d-none d-lg-block" src="./assets/img/Hero.png" alt="Banner da Feira ES+ Café, contendo a logo do Hub ES+ e data do evento (19 e 20/04/2024)">
-        <!-- </section> -->
-        <!-- <section class="hero-mob container-fluid p-0"> -->
         <img class="hero hero-mob d-lg-none" src="./assets/img/banner_mob.svg" alt="Banner da Feira ES+ Café, contendo a logo do Hub ES+ e data do evento (19 e 20/04/2024)">
-        <!-- </section> -->
         <section class="cafe py-4">
             <img class="w-100 object-fit-cover" src="./assets/img/graos.png" alt="">
         </section>
-        <main class="programacao d-flex justify-content-center align-items-center position-relative"> <!--alterei a section para main, para ser html semântico-->
+        <main class="programacao d-flex justify-content-center align-items-center position-relative">
             <img class="graf graf-1 d-lg-block" src="./assets/img/graf-1.svg" alt="">
             <img class="graf graf-2 d-lg-block" src="./assets/img/graf-2.svg" alt="">
             <section class="container">
-                <!-- <div class="chamada text-center py-5"> -->
                 <p class="chamada text-center py-5">Conheça a programação completa e participe!</p>
-                <!-- </div> -->
                 <section class="row d-flex justify-content-evenly row-gap-5">
                     <section class="col-md-4 prog prog-sex">
                         <img class="graf graf-3 d-lg-block" src="./assets/img/graf-3.svg" alt="">
                         <img class="graf graf-4 d-lg-block" src="./assets/img/graf-4.svg" alt="">
                         <section class="tit px-3 d-flex justify-content-between">
                             <img src="./assets/img/grao-esq.svg" class="grao" alt="">
-                            <time datetime="2024-04-19"><!--add time para html semântico e SEO-->
+                            <time datetime="2024-04-19">
                                 <span class="destaque-1">19/04</span>
                                 <span class="destaque-2"> (Sexta)</span>
                             </time>
                             <img src="./assets/img/grao-dir.svg" class="grao" alt="">
                         </section>
-                        <article class="detalhes"><!--add article para html semântico-->
+                        <article class="detalhes">
                             <p>
                                 <span class="destaque-3">09h |</span> 
                                 <span class="destaque-4">Cerimônia de Abertura</span><br>
@@ -55,7 +49,7 @@
                             <p>
                                 <span class="destaque-3">09h - 13h |</span> 
                                 <span class="destaque-4">Oficina Maker - Fotografia Gastronômica</span> 
-                                <span class="destaque-5"><em>//Facilitadora:</span> Natália Rabelo (fotógrafa gastronômica).</em><br> <!--no caso, o <em> é mais semântico que o <i>-->
+                                <span class="destaque-5"><em>//Facilitadora:</span> Natália Rabelo (fotógrafa gastronômica).</em><br>
                                 <span class="destaque-3">| Inscrições abertas |</span>
                             </p>
                             <p>
@@ -118,7 +112,7 @@
                     <section class="col-md-4 prog prog-sab">
                         <img class="graf graf-5 d-lg-block"  src="./assets/img/graf-5.svg" alt="">
                         <img  class="graf graf-6 d-lg-block" src="./assets/img/graf-6.svg" alt="">
-                        <section class="tit px-3 d-flex display-row justify-content-between">
+                        <section class="tit px-3 d-flex flex-row justify-content-between">
                             <img src="./assets/img/grao-esq.svg" class="grao">
                             <time datetime="2024-04-20">
                                 <span class="destaque-1">20/04</span> 
@@ -189,7 +183,7 @@
                     </section>
                 </section>
                 <section class="botao d-flex justify-content-center">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeknq1ezxQInuWybWjgwC7e50ZfTSiLyYTa4r6A3fP4zOIJ4g/viewform" target="_blank" role="button" aria-label="Inscreva-se">Inscreva-se</a> <!--mudei pra anchor pro link ir pra fora da página-->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeknq1ezxQInuWybWjgwC7e50ZfTSiLyYTa4r6A3fP4zOIJ4g/viewform" target="_blank" role="button" aria-label="Inscreva-se">Inscreva-se</a>
                     <img class="ilustra-mob d-lg-none" src="./assets/img/Group1.svg" alt="">
                 </section>
             </section>
@@ -199,57 +193,32 @@
                 <img class="d-lg-none position-absolute end-0 graf-footer-mob" src="./assets/img/graf-footer-mobile.svg" alt="">
                 <section class="social-mob container d-flex flex-row justify-content-between align-items-center">
                     <section>
-                        <!-- <div class="logo py-3"> -->
                         <img class="logo py-3" src="./assets/img/logo_footer.svg" alt="Logo do Hub ES+">
-                        <!-- </div> -->
                         <ul class="infos">
-                            <li class="zap d-flex display-row align-baseline">
-                                <!-- <div> -->
+                            <li class="zap d-flex flex-row align-baseline">
                                 <i class="fa-brands fa-whatsapp"></i>
-                                <!-- </div>
-                                <div> -->
                                 <a href="https://api.whatsapp.com/send?phone=5527995744755" target="_blank" aria-label="Whatsapp">&nbsp;&nbsp;(27) 99574-4755</a>
-                                <!-- </div>-->
                             </li>
-                            <li class="d-flex display-row align-baseline">
-                                <!-- <div> -->
+                            <li class="d-flex flex-row align-baseline">
                                 <i class="fa-regular fa-envelope"></i> 
-                                <!-- </div>
-                                <div> -->
                                 <a href="mailto:hubes@ibcavix.org.br" target="_blank" aria-label="Email">&nbsp;&nbsp;hubes@ibcavix.org.br</a>    
-                                <!-- </div>                                 -->
                             </li>
                             <hr>
-                            <!-- <img src="./assets/img/hr.png"> -->
-                            <li class="location d-flex display-row align-baseline">
-                                <!-- <div> -->
+                            <li class="location d-flex flex-row align-baseline">
                                 <i class="fa-solid fa-location-dot"></i> 
-                                <!-- </div>
-                                <div> -->
                                 <a href="https://maps.app.goo.gl/n91m9LCKFC7auUtB7" target="_blank" aria-label="Mapa">&nbsp;&nbsp;Praça Costa Pereira, 30, Centro, Vitória-ES<br>
                                     &nbsp;&nbsp;Segunda a sábado, 08h às 20h</a>
-                                <!-- </div> -->
                             </li>
                         </ul>
                     </section>
                     <section class="nav-mob">
-                        <!-- <div class="ilustra"> -->
                         <img class="graf d-lg-block ilustra" src="./assets/img/ilustra.svg" alt="Ilustração de ramo de café e produtor de café sorrindo enquanto segura uma cesta com grãos">
-                            <!-- <div class="photo">
-                                <img src="./assets/img/photo_footer.svg" alt="Foto em preto e branco de produtor de café sorrindo enquanto segura uma cesta com grãos">
-                            </div> juntei as duas em uma ilustração só
-                        </div>-->
-                        <!-- <div class="socials"> -->
-                            <!-- <div class="graf graf-7 d-lg-block"> -->
                         <img class="graf graf-7 d-lg-block" src="./assets/img/graf-footer.svg" alt="">
-                            <!-- </div> -->
                         <nav class="icons">
                             <a href="https://www.instagram.com/hubesmais/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
                             <a href="https://api.whatsapp.com/send?phone=5527995744755" target="_blank" aria-label="Whatsapp"><i class="fa-brands fa-square-whatsapp"></i></a>
                             <a href="https://br.linkedin.com/company/hubesmais" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                            <!-- <i class="fa-brands fa-square-youtube"></i> -->
                         </nav>
-                        <!-- </div> -->
                     </section>
                 </section>
             </section>
@@ -280,9 +249,7 @@
                         </section>
                     </section>
                 </section>
-                <!-- <div class="graf-8"> -->
                 <img class="graf-8" src="./assets/img/graf-footer-b.svg" alt="">
-                <!-- </div> -->
             </section>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
