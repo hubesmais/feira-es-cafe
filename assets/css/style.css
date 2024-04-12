@@ -40,10 +40,7 @@ a {
 
 .programacao {
     background-color: #F3981C;
-    margin-top: -1px; /*tava com a linha aparecendo em alguns breakpoints, tirei do mobile e botei em tudo, e added classes do bs
-    justify-content: center;
-    align-items: center;
-    position: relative;*/
+    margin-top: -1px;
 }
 .graf {
     position: absolute;
@@ -139,13 +136,13 @@ a {
 .programacao time {
     text-transform: uppercase;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8333rem;
     color: #F0E3DB;
 }
 
 .destaque-1 {
     font-family: "Bonn Bold";
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .destaque-2 {
@@ -380,17 +377,11 @@ i {
     }
 }
 @media (max-width: 1281px) {
-    .programacao time {
-        font-size: 1.5rem;
-    }
     .regua{
         max-width: 70rem;
     }
 }
 @media (max-width: 1024px) {
-    .programacao time {
-        font-size: 1rem;
-    }
     .regua{
         max-width: 43rem;
     }
@@ -488,61 +479,15 @@ i {
     .botao {
         margin-bottom: -11.1rem;
     }
-    .programacao time {
-        font-size: 1.5rem;
-    }
-}
-@media (max-width: 403px){
-    .programacao time {
-    font-size: 1.4rem;
-}
 }
 @media (max-width: 396px) {
     .chamada{
         font-size: 1.5rem;
     }
-    .programacao time {
-        font-size: 1.3rem;
-    }
 }
-@media (max-width: 386px){
-    .programacao time {
-    font-size: 1.2rem;
-}
-}
-@media (max-width: 377px){
-    .programacao time {
-    font-size: 1rem;
-}
-}
-@media (max-width: 375px) {
+@media (max-width: 376px) {
     .botao {
         margin-bottom: -9.7rem;
-    }
-}
-@media (max-width: 360px){
-    .programacao time {
-        font-size: .9rem;
-    }
-}
-@media (max-width: 351px){
-    .programacao time {
-        font-size: .8rem;
-    }
-}
-@media (max-width: 342px){
-    .programacao time {
-        font-size: .7rem;
-    }
-}
-@media (max-width: 333px){
-    .programacao time {
-        font-size: .6rem;
-    }
-}
-@media (max-width: 325px){
-    .programacao time {
-        font-size: .5rem;
     }
 }
 @media (max-width: 320px) {
