@@ -106,6 +106,8 @@ a {
 .programacao time {
     font-size: 1.8333rem;
     color: #F0E3DB;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .destaque-1 {
@@ -354,9 +356,6 @@ i {
         flex-wrap: wrap;
         padding: 3rem;
         padding-bottom: 1.5rem;
-    }
-    .mob-sec{
-        text-align: center;
     }
     .nav-mob{
         padding-top: 3rem;
