@@ -201,15 +201,12 @@ a {
     background-color: #CA4024;
     color: #F0E3DB;
     border: none;
-    padding-right: 1.2em;
-    padding-left: 1.2em;
+    padding: .3em 1.2em;
     text-transform: uppercase;
     font-family: "Bonn Bold";
     margin: 5rem;
     border-radius: 100px;
-    font-size: 2.3rem;
-    padding-top: .3em;
-    padding-bottom: .3em;
+    font-size: 1.6667rem;
     z-index: 1;
 }
 
@@ -219,7 +216,6 @@ a {
 }
 .ilustra-mob{
     margin: 0 2rem;
-    padding-bottom: 1.8rem;
 }
 
 footer .top-footer {
@@ -404,11 +400,11 @@ i {
     }
     .botao {
         flex-direction: column;
-        margin-bottom: -11.1rem;
     }
     .botao a {
         font-size: 1rem;
         margin-bottom: 2rem;
+        padding: 1em 1.2em;
     }
     .prog {
         padding-left: 1.5rem;
@@ -455,45 +451,12 @@ i {
         font-size: .7rem;
     }
 }
-@media (max-width: 768px) {
-    .botao {
-        margin-bottom: -19.1rem;
-    }
-}
-@media (max-width: 767px) {
-    .botao {
-        margin-bottom: -14.2rem;
-    }
-}
-@media (max-width: 575px) {
-    .botao {
-        margin-bottom: -15.2rem;
-    }
-}
-@media (max-width: 475px) {
-    .botao {
-        margin-bottom: -13.1rem;
-    }
-}
-@media (max-width: 426px) {
-    .botao {
-        margin-bottom: -11.1rem;
-    }
-}
 @media (max-width: 396px) {
     .chamada{
         font-size: 1.5rem;
     }
 }
-@media (max-width: 376px) {
-    .botao {
-        margin-bottom: -9.7rem;
-    }
-}
 @media (max-width: 320px) {
-    .botao {
-        margin-bottom: -8.2rem;
-    }
     .botao a{
         margin: 2rem;
     }
