@@ -455,6 +455,9 @@ i {
     .chamada{
         font-size: 1.5rem;
     }
+    .location{
+        max-width: 18rem;
+    }
 }
 @media (max-width: 320px) {
     .botao a{
