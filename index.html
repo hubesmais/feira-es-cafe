@@ -24,8 +24,8 @@
             <img class="w-100 object-fit-cover" src="./assets/img/graos.png" alt="">
         </section>
         <main class="programacao d-flex justify-content-center align-items-center position-relative">
-            <img class="graf graf-1 d-lg-block" src="./assets/img/graf-1.svg" alt="">
-            <img class="graf graf-2 d-lg-block" src="./assets/img/graf-2.svg" alt="">
+            <img class="graf graf-1 d-lg-block top-0 start-0" src="./assets/img/graf-1.svg" alt="">
+            <img class="graf graf-2 d-lg-block bottom-0 end-0" src="./assets/img/graf-2.svg" alt="">
             <section class="container">
                 <p class="chamada text-center py-5">Conheça a programação completa e participe!</p>
                 <section class="row d-flex justify-content-evenly row-gap-5">
@@ -34,7 +34,7 @@
                         <img class="graf graf-4 d-lg-block" src="./assets/img/graf-4.svg" alt="">
                         <section class="tit px-3 d-flex justify-content-between">
                             <img src="./assets/img/grao-esq.svg" class="grao" alt="">
-                            <time datetime="2024-04-19">
+                            <time class="text-uppercase text-center" datetime="2024-04-19">
                                 <span class="destaque-1">19/04</span>
                                 <span class="destaque-2"> (Sexta)</span>
                             </time>
@@ -183,16 +183,14 @@
                     </section>
                 </section>
                 <section class="botao d-flex justify-content-center text-center">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeknq1ezxQInuWybWjgwC7e50ZfTSiLyYTa4r6A3fP4zOIJ4g/viewform" target="_blank" role="button" aria-label="Inscreva-se">Inscreva-se</a>
-                    <img class="ilustra-mob d-lg-none" src="./assets/img/Group7.svg" alt="">
+                    <a class="text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSeknq1ezxQInuWybWjgwC7e50ZfTSiLyYTa4r6A3fP4zOIJ4g/viewform" target="_blank" role="button" aria-label="Inscreva-se">Inscreva-se</a>
                 </section>
             </section>
         </main>
         <footer class="p-0">
-            <section class="top-footer">
-                <img class="d-lg-none position-absolute end-0 graf-footer-mob" src="./assets/img/graf-footer-mobile.svg" alt="">
+            <section class="top-footer position-relative">
                 <section class="social-mob container d-flex flex-row justify-content-between align-items-center">
-                    <section class="z-1">
+                    <section class="mob-sec">
                         <img class="logo py-3" src="./assets/img/logo_footer.svg" alt="Logo do Hub ES+">
                         <ul class="infos">
                             <li class="zap d-flex flex-row align-baseline">
@@ -206,14 +204,14 @@
                             <hr>
                             <li class="location d-flex flex-row align-baseline">
                                 <i class="fa-solid fa-location-dot"></i> 
-                                <a href="https://maps.app.goo.gl/n91m9LCKFC7auUtB7" target="_blank" aria-label="Mapa">&nbsp;&nbsp;Praça Costa Pereira, 30, Centro, Vitória-ES<br>
-                                    &nbsp;&nbsp;Segunda a sábado, 08h às 20h</a>
+                                <a href="https://maps.app.goo.gl/n91m9LCKFC7auUtB7" target="_blank" aria-label="Mapa">Praça Costa Pereira, 30, Centro, Vitória-ES<br>
+                                    Segunda a sábado, 08h às 20h</a>
                             </li>
                         </ul>
                     </section>
                     <section class="nav-mob">
-                        <img class="graf d-lg-block ilustra" src="./assets/img/ilustra.svg" alt="Ilustração de ramo de café e produtor de café sorrindo enquanto segura uma cesta com grãos">
-                        <img class="graf graf-7 d-lg-block" src="./assets/img/graf-footer.svg" alt="">
+                        <img class="graf d-lg-block ilustra position-relative" src="./assets/img/ilustra.svg" alt="Ilustração de ramo de café e produtor de café sorrindo enquanto segura uma cesta com grãos">
+                        <img class="graf graf-7 d-lg-block position-absolute top-0 end-0 pe-0" src="./assets/img/graf-footer.svg" alt="">
                         <nav class="icons">
                             <a href="https://www.instagram.com/hubesmais/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
                             <a href="https://api.whatsapp.com/send?phone=5527995744755" target="_blank" aria-label="Whatsapp"><i class="fa-brands fa-square-whatsapp"></i></a>
@@ -222,7 +220,7 @@
                     </section>
                 </section>
             </section>
-            <section class="bottom-footer">
+            <section class="bottom-footer position-relative p-0">
                 <section class="container regua">
                     <section class="gutter row row-cols-1 row-cols-xxl-2 z-1 position-relative">
                         <section class="parceria col">
@@ -252,7 +250,7 @@
                         </section>
                     </section>
                 </section>
-                <img class="graf-8" src="./assets/img/graf-footer-b.svg" alt="">
+                <img class="graf-8 d-none d-lg-block position-absolute vw-100" src="./assets/img/graf-footer-b.svg" alt="">
             </section>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
