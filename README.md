@@ -6,7 +6,7 @@
 
 ## ⚙️ Descrição do Projeto
 
-Este é o hotsite da Feira ES+ Café, desenvolvido pela Coordenação de Programação Web e Análise de Dados do Hub ES+. Surge da demanda da divulgação de evento específico anterior a produção da plataforma do Hub ES+, ainda em desenvolvimento. O hotsite foi criado como solução paliativa para divulgar e disponibilizar informações sobre a Feira ES+ Café, que promoveu o café capixaba, suas/seus produtoras/es, baristas e empreendedoras/es do setor.
+Este é o [hotsite da Feira ES+ Café](https://esmaiscriativo.es.gov.br/hubesmais/feira-es-cafe/), desenvolvido pela Coordenação de Programação Web e Análise de Dados do Hub ES+. Surge da demanda da divulgação de evento específico anterior a produção da plataforma do Hub ES+, ainda em desenvolvimento. O hotsite foi criado como solução paliativa para divulgar e disponibilizar informações sobre a Feira ES+ Café, que promoveu o café capixaba, suas/seus produtoras/es, baristas e empreendedoras/es do setor.
 
 ## 🚀 Status do Projeto
 
