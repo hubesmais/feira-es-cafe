@@ -19,7 +19,7 @@ O hotsite apresenta a programação completa da Feira ES+ Café, informações s
 ## 🤝 Pessoas Contribuidoras
 
 - Lais Rocio | Coordenadora de Comunicação
-- Júlia Partenostro | Coordenadora de Design
+- Júlia Paternostro | Coordenadora de Design
 
 ## ✒️ Pessoas Desenvolvedoras do Projeto
 
