@@ -24,7 +24,7 @@ O hotsite apresenta a programação completa da Feira ES+ Café, informações s
 ## ✒️ Pessoas Desenvolvedoras do Projeto
 
 - [Coordenação de Desenvolvimento Web e Análise de Dados do Hub ES+](https://github.com/hubesmais)
-- [Priss Reges](https://github.com/bellial) | Tech Lead (Coordenare de Web e Dados)
+- [Priss Reges](https://github.com/bellial) | Tech Lead (Coordenadore de Web e Dados)
 - [Bárbara Tavares](https://github.com/b-tavares) | Junior Full-Stack Developer (Monitora de Web e Dados)
 
 
